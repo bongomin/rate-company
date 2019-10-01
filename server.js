@@ -11,12 +11,19 @@ var passport = require('passport');
 var flash = require('connect-flash');
 var _ = require('underscore');
 var moment = require('moment');
+var db = require('./config/database');
 
 
 var app = express();
 
+// map global promisies / get reed of worning
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/rateme');
+// connection to mongoose
+mongoose.connect(db.mongoURI, {
+  useNewUrlParser: true
+})
+  .then(() => console.log('MongoDB Connected...'))
+  .catch(err => console.log(err));
 
 require('./config/passport');
 require('./secret/secret');
@@ -55,7 +62,9 @@ require('./routes/message')(app)
 
 
 
-app.listen(3000, function(){
-    console.log('Listening on port 3000');
+var PORT = process.env.PORT || 3000 ;
+
+app.listen(PORT,(req,res) => {
+   console.info(` server is running on PORT ${PORT}.....  `);
 });
 
