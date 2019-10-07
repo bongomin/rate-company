@@ -62,7 +62,7 @@ require('./routes/message')(app)
 
 
 
-var PORT = process.env.PORT || 3000 ;
+var PORT = process.env.PORT || 5000 ;
 
 app.listen(PORT,(req,res) => {
    console.info(` server is running on PORT ${PORT}.....  `);

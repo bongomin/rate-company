@@ -9,7 +9,7 @@ var secret = require('../secret/secret');
 
 module.exports = (app, passport) => {
 
-    app.get('/', (req, res, next) =>{
+    app.get('/',(req, res, next) =>{
         
         if(req.session.cookie.originalMaxAge !== null){
             res.redirect('/home');
