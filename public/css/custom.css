@@ -9,7 +9,6 @@
     height: 40px;
     font-size: 17px;
 }
-
 input[type="submit"]{
     height: 40px;
     font-size: 20px;
@@ -24,8 +23,6 @@ input[type="submit"]{
     color: #fff;
     border-width: 1px;
     border-style: solid;
-    border-color: #263961;
-    width: 50%;
 }
 
 .btn-facebook:link, .btn-facebook:visited {
@@ -45,7 +42,7 @@ input[type="submit"]{
 .main_body h1{
     color: #73879C;
     font-size: 46px;
-    font-weight: 900;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -55,7 +52,6 @@ input[type="submit"]{
     font-weight: normal;
     text-align: center;
 }
-
 #colDesc{
     margin: 50px 20px 0px 70px;
     padding-top: 40px;
@@ -63,6 +59,11 @@ input[type="submit"]{
     height: 350px;
     float: left;
     width: 25%;
+    -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+
+
 }
 
 #colDesc h3{

@@ -1,6 +1,8 @@
 body {
     overflow-x: hidden;
     background: #efefef;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
  }
 
 /* Toggle Styles */
@@ -14,9 +16,9 @@ body {
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 0px;
+    padding: 10px;
 }
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -25,7 +27,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #333333;
+    background: #6a148b !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -33,9 +35,8 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 10px;
 }
-
 #page-content-wrapper {
     width: 100%;
     position: absolute;
@@ -90,22 +91,22 @@ body {
 
 .sidebar-nav li a {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     position: relative;
     display: block;
-    padding: 0px 0px 5px 0px;
+    padding: 2px 2px 5px 0px;
     color: #fff;
     white-space: nowrap;
     z-index: 2;
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	border-bottom: 0.5px solid #808080;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: #4aa1f3;
+    background: #0d141b;
 }
 
 .sidebar-nav li a:active,
@@ -125,14 +126,18 @@ body {
 }
 
 .sidebar-brand {
-    height: 65px;
-    font-size: 25px;
+    height: 5px;
+    font-size: 10px;
     line-height: 60px;
     text-align: center;
 }
-
 .sidebar-brand a {
-    color: white;
+    color: rgb(252, 247, 247);
+    font-size: 30px;
+    margin-bottom: 2px;
+    border: 2px solid rgb(245, 240, 240);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .sidebar-brand a:hover {
@@ -177,7 +182,6 @@ body {
         padding: 20px;
         position: relative;
     }
-
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;

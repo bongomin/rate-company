@@ -34,7 +34,7 @@ module.exports = (app) => {
             
             console.log(newCompany);
             
-            req.flash('success', 'Company data has been added.');
+            req.flash('success', 'Company data has been added successfully.');
             res.redirect('/company/create');
         })
     });
@@ -49,7 +49,6 @@ module.exports = (app) => {
                if(err){
                    throw err
                }
-               
                console.log('File has been renamed');
            }); 
         });
