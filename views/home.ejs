@@ -6,28 +6,26 @@
 
 
     <div id="page-content-wrapper">
-      
-       <% include partials/navbar %>
-       
+
+        <% include partials/navbar %>
+
         <div class="container-fluid main_body">
-          
-           <h1>Hello, <%= user.fullname %></h1>
-           <p>What would you like to do today?</p>
-           
+
+            <h1>Welcome, <%= user.fullname %></h1>
+            <p>What would you like to do today?</p>
+
             <div class="row">
                 <div class="col-md-4" id="colDesc">
                     <div class="info-icon"><i class="fa fa-sign-in"></i></div>
                     <h3 class="text-center">Add Company</h3>
                     <p class="text-center">Add company profile. Registered employees can give ratings and reviews.</p>
-
                     <a href="/company/create" class="btn btn-block btn-primary link_btn">Add</a>
                 </div>
 
                 <div class="col-md-4" id="colDesc">
                     <div class="info-icon"><i class="fa fa-search"></i></div>
                     <h3 class="text-center">Search</h3>
-                    <p class="text-center">Search through our business catalogue and find your best partner.</p>
-
+                    <p class="text-center">Search through the business catalogue and find your best partner.</p>
                     <a href="/company/search" class="btn btn-block btn-primary link_btn">Search</a>
                 </div>
 
@@ -43,53 +41,3 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
