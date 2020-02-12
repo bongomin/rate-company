@@ -106,10 +106,10 @@ module.exports = (app, passport) => {
                 var mailOptions = {
                     to: user.email,
                     from: 'RateMe '+'<'+secret.auth.user+'>',
-                    subject: 'RateMe Application Password Reset Token',
+                    subject: 'Rate - Company  Password Reset Token',
                     text: 'You have requested for password reset token. \n\n'+
                         'Please click on the link to complete the process: \n\n'+
-                        'http://localhost:3000/reset/'+rand+'\n\n'
+                        'http://localhost:5000/reset/'+rand+'\n\n'
                 };
                 
                 smtpTransport.sendMail(mailOptions, (err, response) => {
