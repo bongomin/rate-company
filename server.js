@@ -40,7 +40,7 @@ app.use(bodyParser.json());
 app.use(validator());
 
 app.use(session({
-    secret: 'Thisismytestkey',
+    secret: 'bongomindaniel12323#523',
     resave: false,
     saveUninitialized: false,
     store: new MongoStore({mongooseConnection: mongoose.connection})
