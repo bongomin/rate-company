@@ -3,8 +3,8 @@
  - a company is registered, then the registerd individuals can rate the bussiness companies respectively
  
 # Installation
-  - clone project repo git clone https://github.com/bongomin/rateme-app.git
-  - cd ratemeapp
+  - clone project repo git clone https://github.com/bongomin/rate-company.git
+  - cd rate-company
 # RUN
   - git install
   - npm server.js
